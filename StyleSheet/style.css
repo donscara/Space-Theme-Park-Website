@@ -1,0 +1,147 @@
+/* COLOR SCHEME:
+1. BLACK -- rgb(0, 0, 0) -- #000
+2. DEEP BLUE -- rgb(8, 26, 90) -- #081A5A
+3. LIGHT BLUE -- rgb(149, 152, 187) -- #9598BB
+4. GOLD -- rgb(200, 167, 72) -- #C8A748
+5. PALE YELLOW -- rgb(235, 220, 181) -- #EBDCB5
+6. WHITE -- rgb(255, 255, 255) -- #FFF
+
+BUTTONS & HIGHLIGHTS - pink -- rgb(186, 30, 104)-- #BA1E68
+
+Fonts:
+Space Park title - Righteous
+Rest - Open Sans
+*/
+
+{
+    box-sizing: border-box;
+}
+
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Nav Area */
+
+nav {
+  grid-area: nav;
+}
+
+nav {
+  background-color: rgb(8, 26, 90);
+}
+
+nav a {
+  color: rgb(235, 220, 181);
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  grid-area: header;
+}
+
+
+header {
+  color: rgb(149, 152, 187);
+}
+
+header h1 {
+  font-family: "Righteous", fantasy;
+  font-size: 3em;
+}
+
+h2,
+
+h3 {
+  font-family: "Righteous", fantasy;
+}
+
+/*LinkArea */
+
+#linkArea {
+  grid-area: main;
+}
+
+.gridlinkArea {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: "header", "header" "p", "p";
+  background-color: rgba(149,152,187);
+}
+
+#linkArea h2 {
+  background-color: rgb(149, 152, 187);
+  color: rgb(8, 26, 90);
+}
+
+#linkArea h3 a {
+  color: rgb(186, 30, 104);
+}
+/* Mosaic of Images */
+
+.row {
+    display:flex;
+    flex-wrap:wrap;
+    padding: 0 4px;
+    height: auto;
+    
+}
+
+.column {
+    flex:100%;
+    max-width:23%;
+    padding: 0 4px;
+    height: auto;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align:middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    
+    
+}
+
+
+main {
+  color: rgb(235, 220, 181);
+}
+
+main h2,
+main h3 {
+  color: rgb(200, 167, 72);
+}
+
+button {
+  background-color: rgb(186, 30, 104);
+  color: white;
+  font-weight: bold;
+}
+
+aside {
+  background-color: rgb(235, 220, 181);
+  color: rgb(0, 0, 0);
+}
+
+footer {
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+}
