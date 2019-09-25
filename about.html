@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/donsc/Downloads/Part2_HTML/Part2_HTML/index.html -->
+<html lang="en">
+  <!-- DV: Page 1 of the Theme Park -->
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Space Park - About</title>
+
+    <meta
+      name="description"
+      content="About Space Park themepark, where you can find information on our activites, services, contact, location and opening hours."
+    />
+    <meta
+      name="keywords"
+      content="Theme Park, Space, Amusement Park, Family Fun"
+    />
+    <meta name="author" content="WD 4 7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- DS: left the list of links from PV as general reference on Page 1-->
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!-- PV: this is a link to Page 1 -->
+        <li><a href="planyourtrip.html">Plan your trip</a></li>
+        <!-- PV: this is a link to Page 2 -->
+        <li><a href="about.html">Promotions</a></li>
+        <!-- PV: this is a link to Promotions section -->
+        <li><a href="#contactCard">Contact</a></li>
+        <!-- PV: this is a link to Footer -->
+      </ul>
+    </nav>
+    <main>
+      <!--DS: Repeating PV Header and Logo -->
+      <header>
+        <!-- PV: I downloaded a free icon from here for the logo: https://svgsilh.com/image/2027086.html -->
+        <object data="./images/logo.svg" height="50" width="50"></object>
+        <h1>Space Park</h1>
+      </header>
+
+      <!-- PV: Section with links to Page 1 and Page 2 -->
+      <h6></h6>
+      <section id="linkArea">
+        <section class="gridlinkArea">
+          <h2>Visit us!</h2>
+
+          <!-- PV: CSS should later make these 2 divs below be two adjacent squares inviting a click to get to Page 1 and Page 2-->
+
+          <div class="linkContent">
+            <!-- Page 1 -->
+            <h3><a href="index.html">Home</a></h3>
+            <p>Back to Home Page!</p>
+          </div>
+
+          <div class="linkContent">
+            <!-- Page 2 -->
+            <h3><a href="planyourtrip.html">Plan your trip!</a></h3>
+            <p>Group trips, accommodation, tickets, events...</p>
+          </div>
+        </section>
+      </section>
+
+      <!-- DS: Google Maps and Position of our facilities-->
+
+      <h3>Our Location</h3>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21412.59475595515!2d-95.11039408243413!3d29.542946585193654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86409d0664806c7f%3A0x3ac923c5bf0a6208!2sSpace+Park+Dr%2C+Nassau+Bay%2C+TX+77058%2C+USA!5e0!3m2!1sen!2ses!4v1558556292915!5m2!1sen!2ses"
+        width="800"
+        height="600"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+      ></iframe>
+
+      <!-- This is the section with photos and heading for the facilities-->
+      <div class="grid-container">
+        <div class="grid-item">
+          <!--Facilities1-->
+          <h2>Roller Coaster Rocket</h2>
+          <img
+            src="images/rollercoaster.jpg"
+            alt="Roller Coaster Rocket"
+            width="300"
+            height="300"
+          />
+
+          <h2>Zero Gravity Room</h2>
+          <img
+            src="images/zerogravity.jpg"
+            alt="Zero Gravity Room"
+            width="300"
+            height="300"
+          />
+
+
+        </div>
+        <div class="grid-item">
+          <!--Facilities2-->
+          <h2>Food and Drinks</h2>
+          <img
+            src="images/fand.jpg"
+            alt="Food and Drinks"
+            width="300"
+            height="300"
+          />
+          <h2>Gift Shop</h2>
+          <img
+            src="images/giftshop.jpg"
+            alt="Gift Shop"
+            width="300"
+            height="300"
+          />
+        </div>
+
+        <!-- DS: List of all the facilities section -->
+
+        <div class="grid-item">
+          <!--FacilitiesList-->
+          <h3>Full list of Facilities</h3>
+
+          <ul>
+            <li>Roller Coaster Rocket</li>
+            <li>Zero Gravity Room</li>
+            <li>Virtual Reality 4D Theatre</li>
+            <li>Food and Drinks</li>
+            <li>Gift Shop</li>
+            
+          </ul>
+            
+        <object data="./images/logo.svg" height="50" width="50"></object>
+
+
+
+            
+          <h2>Virtual Reality 4D Theatre</h2>
+          <img
+            src="images/vr4d.jpg"
+            alt="Virtual Reality 4D Theatre"
+            width="300"
+            height="300"
+          />
+        </div>
+      </div>
+    </main>
+
+    <!-- DS: leaving Footer section the same as Home Page -->
+    <!-- PV: aside for a news feed, CSS can place it to the side of the screen for desktop, and to the bottom on mobile -->
+    <aside id="news">
+      <h2>News</h2>
+      <dl>
+        <dt>Summer Solstice Program Published</dt>
+        <dt></dt>
+        <dd>Special events to celebrate beginning of summer</dd>
+        <dt>Education Award for Space Park</dt>
+        <dd>
+          Space Park was awarded as a top contributor to early science education
+          in astronomy
+        </dd>
+        <dt>New Star Observatory Construction Finalized</dt>
+        <dd>
+          Night star observatory facilty to open for visitors on
+          <time datetime="2019-07-01">July 2nd, 2019</time>
+        </dd>
+      </dl>
+
+      <!-- PV: form to input email to be added later -->
+      <p>Subscribe to our Newsletter!</p>
+    </aside>
+
+    <footer>
+      <address>
+        Space Park<br />
+        Visit us at:<br />
+        42, Milky Way<br />
+        Solar System 39801<br />
+        Earth<br />
+      </address>
+
+      <div id="contatCard">
+        <p>Contact us at:</p>
+
+        <table>
+          <tr>
+            <th>Phone</th>
+            <td>111-999-555</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td>welcome@spacepark.com</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="openingHours">
+        <p>Opening Hours:</p>
+        <p>Every day from 7am to midnight</p>
+      </div>
+    </footer>
+  </body>
+</html>

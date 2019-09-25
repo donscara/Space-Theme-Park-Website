@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <!-- PV: this is the homepage of the theme park -->
+
+  <head>
+    <title>Space Park - Homepage</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Website of Space Park themepark, where you can find information on our activites, services, contact, location and opening hours."
+    />
+    <meta
+      name="keywords"
+      content="Theme Park, Space, Amusement Park, Family Fun"
+    />
+    <meta name="author" content="WD 4 7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <!-- PV: this is a link to Page 1 -->
+        <li><a href="planyourtrip.html">Plan your trip</a></li>
+        <!-- PV: this is a link to Page 2 -->
+        <li><a href="about.html">Promotions</a></li>
+        <!-- PV: this is a link to Promotions section -->
+        <li><a href="#contactCard">Contact</a></li>
+        <!-- PV: this is a link to Footer -->
+      </ul>
+    </nav>
+
+    <main>
+      <!--Header has h1 as main heading and logo. Afterwards each section has a h2 heading, and smaller divs have h3 headings -->
+      <header>
+        <!-- PV: I downloaded a free icon from here for the logo: https://svgsilh.com/image/2027086.html -->
+        <object data="./images/logo.svg" height="50" width="50"></object>
+        <h1>Space Park</h1>
+      </header>
+
+      <!-- PV: Section with links to Page 1 and Page 2 -->
+      <section id="linkArea">
+      <section class="gridlinkArea">
+        <h2>Visit us!</h2>
+
+        <!-- PV: CSS should later make these 2 divs below be two adjacent squares inviting a click to get to Page 1 and Page 2-->
+
+        <div class="linkContent">
+          <!-- Page 1 -->
+          <h3><a href="about.html">About Space Park</a></h3>
+          <p>
+            See what Space Park has to offer: rides, activities, restaurants and
+            more!
+          </p>
+        </div>
+
+        <div class="linkContent">
+          <!-- Page 2 -->
+          <h3><a href="planyourtrip.html">Plan your trip!</a></h3>
+          <p>Group trips, accommodation, tickets, events...</p>
+        </div>
+     </section>
+     </section>
+
+      <!-- PV: this is just a lone photo to have one here, I guess later on we will style some as background images, etc -->
+      <!--DS image mosaic -->
+
+ 
+        <div class="row">
+            <div class="column">
+            <img src="images/nasa-small.jpg">
+            <img src="images/zerogravity.jpg">
+            <img src="images/startrek.jpg">
+            
+            
+            </div>
+            
+        
+            
+            <div class="column">
+            <img src="images/starrynight.jpg">
+            <img src="images/ISS1.jpg">
+            <img src="images/iss2.jpg">
+            
+            
+            </div>
+        
+            <div class="column">
+            <img src="images/spacewalk.jpg">
+            <img src="images/earth1.jpg">
+            
+            
+            </div>
+        
+            <div class="column">
+            
+            <img src="images/freefall.jpg">
+            <img src="images/S65-34635_small.jpg">
+            <img src="images/moon.jpg">
+            
+            </div>   
+        </div>
+        
+     
+      
+
+      <!-- This is the section for current promotions -->
+      <section id="promotions">
+        <h2>Promotions</h2>
+        <!-- PV: These promotion divs can later be styled as a slideshow in CSS, a list, or boxes to click on-->
+        <div class="promotionContent">
+          <h3>Summer Camp - hurry to snatch the last spots!</h3>
+          <p>
+            A full summer of space fun! Different age groups available, from
+            ages 6 to 16 - check last minute availablity
+          </p>
+
+          <table>
+            <tr>
+              <th>Start date</th>
+              <td><time datetime="2019-06-01"> June 1, 2019</time></td>
+            </tr>
+            <tr>
+              <th>End date</th>
+              <td><time datetime="2019-08-15">August 15, 2019</time></td>
+            </tr>
+          </table>
+
+          <button>Book Now</button>
+        </div>
+
+        <div class="promotionContent">
+          <h3>Early bird annual pass for 2020</h3>
+          <p>
+            Buy your annual pass for 2020 by July 1st of 2019, and get a 30%
+            dicount!
+          </p>
+          <p>Individual and family passes available.</p>
+
+          <button>Buy Now</button>
+        </div>
+
+        <div class="promotionContent">
+          <h3>Group Discounts</h3>
+          <p>We have many options for group visits to the park.</p>
+          <p>
+            Are you a school class, a work team, a wedding party? We have
+            specialized arrangements for any occasion.
+          </p>
+
+          <button>Book Now</button>
+        </div>
+      </section>
+
+      <!-- PV: aside for a news feed, CSS can place it to the side of the screen for desktop, and to the bottom on mobile -->
+    </main>
+
+    <aside id="news">
+      <h2>News</h2>
+      <dl>
+        <dt>Summer Solstice Program Published</dt>
+        <dt></dt>
+        <dd>Special events to celebrate beginning of summer</dd>
+        <dt>Education Award for Space Park</dt>
+        <dd>
+          Space Park was awarded as a top contributor to early science education
+          in astronomy
+        </dd>
+        <dt>New Star Observatory Construction Finalized</dt>
+        <dd>
+          Night star observatory facilty to open for visitors on
+          <time datetime="2019-07-01">July 2nd, 2019</time>
+        </dd>
+      </dl>
+
+      <!-- PV: form to input email to be added later -->
+      <p>Subscribe to our Newsletter!</p>
+    </aside>
+
+    <footer>
+      <address>
+        Space Park<br />
+        Visit us at:<br />
+        42, Milky Way<br />
+        Solar System 39801<br />
+        Earth<br />
+      </address>
+
+      <div id="contatCard">
+        <p>Contact us at:</p>
+
+        <table>
+          <tr>
+            <th>Phone</th>
+            <td>111-999-555</td>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <td>welcome@spacepark.com</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="openingHours">
+        <p>Opening Hours:</p>
+        <p>Every day from 7am to midnight</p>
+      </div>
+    </footer>
+  </body>
+</html>
